@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./React Sneakers_files/css2" rel="stylesheet">
+    <title>React Sneakers</title>
+  <script defer="" src="./React Sneakers_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: "Inter", system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+* {
+  font-family: "Inter", system-ui;
+}
+
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin-right: 15px;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: #9d9d9d;
+  margin: 0;
+}
+
+.headerRight {
+  display: flex;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.wrapper-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.cardWrapper {
+  display: flex;
+}
+
+
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnCard {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.search-block {
+  display: flex;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+input {
+  border: 0;
+  padding: 14px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.overlay {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.right-side-bar {
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  width: 420px;
+  right: 0;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.01);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cartItem p {
+  font-size: 16px;
+}
+
+.cartItem b {
+  font-size: 14px;
+}
+
+.removeBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2 ease-in-out;
+}
+
+.removeBtn:hover {
+  opacity: 1;
+}
+
+.cartImg {
+  margin: 20px;
+}
+
+.titleWrapper {
+  margin: 20px;
+}
+
+.titleIltem {
+  margin-bottom: 5px;
+}
+
+.wrapper-final-payment {
+  margin-bottom: 20px;
+}
+
+.wrapper-final-payment div {
+  flex: 1 1;
+  border: 1px;
+  height: 1px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+
+.final-payment {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  top: -4px;
+  margin: 0 7px;
+}
+
+.green-btn {
+  width: 100%;
+  height: 55px;
+  border-radius: 18px;
+  background: #9dd458;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.green-btn img {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1QsK0JBQStCO0VBQy9CLG1DQUFtQztFQUNuQyxrQ0FBa0M7RUFDbEMseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLDRDQUE0QztFQUM1QyxtQkFBbUI7RUFDbkIsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsY0FBYztFQUNkLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQzs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7OztBQUlBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtBQUNoQzs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIseUJBQXlCO0VBQ3pCLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixtQkFBbUI7RUFDbkIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxhQUFhO0VBQ2IsZUFBZTtFQUNmLFlBQVk7QUFDZDs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsT0FBTztFQUNQLE1BQU07RUFDTixZQUFZO0VBQ1osV0FBVztFQUNYLHFDQUFxQztFQUNyQyxVQUFVO0FBQ1o7O0FBRUE7RUFDRTsyQkFDeUI7RUFDekIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixRQUFRO0VBQ1IsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQiw4Q0FBOEM7RUFDOUMsYUFBYTtFQUNiLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGVBQWU7RUFDZixtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxTQUFPO0VBQ1AsV0FBVztFQUNYLFdBQVc7RUFDWCxpQ0FBaUM7QUFDbkM7O0FBRUE7RUFDRSxhQUFhO0VBQ2IscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsYUFBYTtBQUNmOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCxXQUFXO0VBQ1gsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxTQUFTO0FBQ1giLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBmb250LWZhbWlseTogXCJJbnRlclwiLCBzeXN0ZW0tdWk7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTdmNmZmO1xufVxuXG4qIHtcbiAgZm9udC1mYW1pbHk6IFwiSW50ZXJcIiwgc3lzdGVtLXVpO1xufVxuXG4ud3JhcHBlciB7XG4gIGJhY2tncm91bmQ6ICNmZmZmZmY7XG4gIGJveC1zaGFkb3c6IDBweCAxMHB4IDIwcHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBtYXgtd2lkdGg6IDEwODBweDtcbiAgbWFyZ2luOiA1MHB4IGF1dG87XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbmxpIHtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICBtYXJnaW4tcmlnaHQ6IDMwcHg7XG59XG5cbmhlYWRlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgcGFkZGluZzogNDBweDtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlYWVhZWE7XG59XG5cbi5oZWFkZXJMZWZ0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuaW1nIHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuXG5oMyB7XG4gIG1hcmdpbjogMDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cblxucCB7XG4gIGNvbG9yOiAjOWQ5ZDlkO1xuICBtYXJnaW46IDA7XG59XG5cbi5oZWFkZXJSaWdodCB7XG4gIGRpc3BsYXk6IGZsZXg7XG59XG5cbi5jb250ZW50IGgxIHtcbiAgbWFyZ2luOiAwO1xufVxuXG4uY29udGVudCB7XG4gIHBhZGRpbmc6IDQwcHg7XG59XG5cbi53cmFwcGVyLWNvbnRlbnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiA0MHB4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5cbi5jYXJkV3JhcHBlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG59XG5cblxuXG4uY2FyZEJvdHRvbSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLnByaWNlSW5mbyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG5cbi5idG5DYXJkIHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2YyZjJmMjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5zZWFyY2gtYmxvY2sge1xuICBkaXNwbGF5OiBmbGV4O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZjNmM2YzO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBwYWRkaW5nOiAwIDE1cHg7XG59XG5cbmlucHV0IHtcbiAgYm9yZGVyOiAwO1xuICBwYWRkaW5nOiAxNHB4O1xuICBmb250LXNpemU6IDE2cHg7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLm92ZXJsYXkge1xuICAvKiBkaXNwbGF5OiBub25lOyAqL1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcbiAgei1pbmRleDogMTtcbn1cblxuLnJpZ2h0LXNpZGUtYmFyIHtcbiAgLyogZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgKi9cbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogNDIwcHg7XG4gIHJpZ2h0OiAwO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQ6ICNmZmZmZmY7XG4gIGJveC1zaGFkb3c6IC0xMHB4IDRweCAyNHB4IHJnYmEoMCwgMCwgMCwgMC4wMSk7XG4gIHBhZGRpbmc6IDMwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG5cbmgyIHtcbiAgbWFyZ2luOiAwO1xuICBmb250LXNpemU6IDI0cHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uY2FydEl0ZW0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBib3JkZXI6IDFweCBzb2xpZCAjZjNmM2YzO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4uY2FydEl0ZW0gcCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLmNhcnRJdGVtIGIge1xuICBmb250LXNpemU6IDE0cHg7XG59XG5cbi5yZW1vdmVCdG4ge1xuICBvcGFjaXR5OiAwLjU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjIgZWFzZS1pbi1vdXQ7XG59XG5cbi5yZW1vdmVCdG46aG92ZXIge1xuICBvcGFjaXR5OiAxO1xufVxuXG4uY2FydEltZyB7XG4gIG1hcmdpbjogMjBweDtcbn1cblxuLnRpdGxlV3JhcHBlciB7XG4gIG1hcmdpbjogMjBweDtcbn1cblxuLnRpdGxlSWx0ZW0ge1xuICBtYXJnaW4tYm90dG9tOiA1cHg7XG59XG5cbi53cmFwcGVyLWZpbmFsLXBheW1lbnQge1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4ud3JhcHBlci1maW5hbC1wYXltZW50IGRpdiB7XG4gIGZsZXg6IDE7XG4gIGJvcmRlcjogMXB4O1xuICBoZWlnaHQ6IDFweDtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IGRhc2hlZCAjZGZkZmRmO1xufVxuXG4uZmluYWwtcGF5bWVudCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBmbGV4LWVuZDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC00cHg7XG4gIG1hcmdpbjogMCA3cHg7XG59XG5cbi5ncmVlbi1idG4ge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1NXB4O1xuICBib3JkZXItcmFkaXVzOiAxOHB4O1xuICBiYWNrZ3JvdW5kOiAjOWRkNDU4O1xuICBib3JkZXI6IDA7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4uZ3JlZW4tYnRuIGltZyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDMwcHg7XG4gIHRvcDogMjBweDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.Card_card__-SwHU {
+    border: 1px solid #f8f8f8;
+    padding: 30px;
+    width: 220px;
+    border-radius: 40px;
+    margin-right: 30px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .Card_card__-SwHU:hover {
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+  }
+  
+  .Card_favourite__unIR\+ {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  span {
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  
+  b {
+    font-size: 14px;
+  }
+  
+  h5 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0NhcmQvQ2FyZC5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kseUJBQXlCO0lBQ3pCLGFBQWE7SUFDYixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixtRUFBbUU7RUFDckU7O0VBRUE7SUFDRSw2Q0FBNkM7SUFDN0MsMkJBQTJCO0VBQzdCOztFQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtJQUNaLHlCQUF5QjtFQUMzQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxnQkFBZ0I7SUFDaEIsZUFBZTtFQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZjhmOGY4O1xuICAgIHBhZGRpbmc6IDMwcHg7XG4gICAgd2lkdGg6IDIyMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDQwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xuICAgIHRyYW5zaXRpb246IGJveC1zaGFkb3cgMC4ycyBlYXNlLWluLW91dCwgdHJhbnNmb3JtIDAuMnMgZWFzZS1pbi1vdXQ7XG4gIH1cbiAgXG4gIC5jYXJkOmhvdmVyIHtcbiAgICBib3gtc2hhZG93OiAwcHggMjBweCAzNXB4IHJnYmEoMCwgMCwgMCwgMC4wOCk7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01cHgpO1xuICB9XG4gIFxuICAuZmF2b3VyaXRlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICB9XG4gIFxuICBzcGFuIHtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgb3BhY2l0eTogMC41O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIH1cbiAgXG4gIGIge1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgfVxuICBcbiAgaDUge1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICB9Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="wrapper "><div class="overlay" style="display: none;"><div class="right-side-bar"><h2>Корзина <img class="removeBtn" src="./React Sneakers_files/btn-remove.svg" alt="Remove"></h2><div class="cartItem"><img class="cartImg" width="70" height="70" src="./React Sneakers_files/image2.jpeg" alt="Sneakers"><dvi class="titleWrapper"><p class="titleIltem">Мужские Кроссовки Nike Blazer Mid Suede</p><b>12 999 руб.</b></dvi><div><img class="removeBtn" src="./React Sneakers_files/btn-remove.svg" alt="Remove"></div></div><div class="cartItem"><img class="cartImg" width="70" height="70" src="./React Sneakers_files/image4.jpeg" alt="Sneakers"><dvi class="titleWrapper"><p class="titleIltem">Кроссовки Puma X Aka Boku Future Rider</p><b>8 999 руб.</b></dvi><div><img class="removeBtn" src="./React Sneakers_files/btn-remove.svg" alt="Remove"></div></div><div class="wrapper-final-payment"><ul><li class="final-payment"><span>Итого:</span><div></div><b>21 498 руб. </b></li><li class="final-payment"><span>Налог 5%: </span><div></div><b>1074 руб. </b></li></ul><button class="green-btn">Оформить заказ <img src="./React Sneakers_files/arrow.svg" alt="arrow"> </button></div></div></div><header><div class="headerLeft"><img width="40" height="40" src="./React Sneakers_files/logo.png"><div class="headerInfo"><h3> React Sneakers </h3><p> Магазин лучших кроссовок</p></div></div><div><ul class="headerRight"><li><img width="18" height="18" src="./React Sneakers_files/cart.svg"><span>1205 руб</span></li><li><img width="18" height="18" src="./React Sneakers_files/user.svg"></li></ul></div></header><div class="content"><div class="wrapper-content"><h1>Все кросовки </h1><div class="search-block"><img src="./React Sneakers_files/search.svg" alt="Search"><input placeholder="Поиск.."></div></div><div class="cardWrapper"><div><div class="favourite"><img src="./React Sneakers_files/heartunlike.svg" alt="Unliked"></div><img width="133" height="112" src="./React Sneakers_files/image1.jpeg" alt="Sneakers"><p>Мужские Кроссовки Nike Blazer Mid Suede</p><div class="cardBottom"><div class="wrapperPrice"><span>Цена:</span><b>12900 </b><button class="btnCard"><img width="11" height="11" src="./React Sneakers_files/btn+.svg" alt="Plus"></button></div></div></div><div><div class="favourite"><img src="./React Sneakers_files/heartunlike.svg" alt="Unliked"></div><img width="133" height="112" src="./React Sneakers_files/image2.jpeg" alt="Sneakers"><p>Мужские Кроссовки Nike Air Max 270</p><div class="cardBottom"><div class="wrapperPrice"><span>Цена:</span><b>15600 </b><button class="btnCard"><img width="11" height="11" src="./React Sneakers_files/btn+.svg" alt="Plus"></button></div></div></div><div><div class="favourite"><img src="./React Sneakers_files/heartunlike.svg" alt="Unliked"></div><img width="133" height="112" src="./React Sneakers_files/image3.jpeg" alt="Sneakers"><p>Мужские Кроссовки Nike Blazer Mid Suede</p><div class="cardBottom"><div class="wrapperPrice"><span>Цена:</span><b>19200 </b><button class="btnCard"><img width="11" height="11" src="./React Sneakers_files/btn+.svg" alt="Plus"></button></div></div></div><div><div class="favourite"><img src="./React Sneakers_files/heartunlike.svg" alt="Unliked"></div><img width="133" height="112" src="./React Sneakers_files/image4.jpeg" alt="Sneakers"><p>Кроссовки Puma X Aka Boku Future Rider</p><div class="cardBottom"><div class="wrapperPrice"><span>Цена:</span><b>21600 </b><button class="btnCard"><img width="11" height="11" src="./React Sneakers_files/btn+.svg" alt="Plus"></button></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
