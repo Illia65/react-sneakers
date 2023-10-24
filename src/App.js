@@ -54,6 +54,7 @@ function App() {
 	const onAddToFavorite = async obj => {
 		console.log(obj)
 		try {
+			// eslint-disable-next-line no-self-compare
 			if (favorites.find(obj => obj.id === obj.id)) {
 				axios.delete(`https://650f113054d18aabfe99cccb.mockapi.io/favorites/${obj.id}`)
 			} else {
@@ -73,7 +74,7 @@ function App() {
 	}
 
 	return (
-		<AppContext.Provider value={{ items, cartItems, favorites }}>
+		<AppContext.Provider value = {{ items, cartItems, favorites }}>
 			<div className='wrapper'>
 				{cartOpened ? (
 					<Rightsidebar
